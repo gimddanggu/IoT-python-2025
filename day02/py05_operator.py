@@ -116,6 +116,10 @@ print(full_name.count('g')) # g가 문장에 몇 번 존재
 print(full_name.upper())
 print(full_name.lower())
 
+
+## T로 자를 때
+# '', "" empty 빈 값
+# ' ', " " space 공백
 origin = 'ISTESTSTRING'
 test = 'TESTSTRING'
 print(origin.split('T'))

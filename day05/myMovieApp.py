@@ -21,10 +21,16 @@ def run():
     while True:
         sel_menu = set_menu()
         if sel_menu == 1:
-            movie = set_movie()
-            lst_movie.append(movie)
+            try:
+                movie = set_movie()
+                lst_movie.append(movie)
+                print('영화 입력 성공!')
+            except Exception as e:
+                print(f'영화 입력 실패!! {e}')
+
+
         elif sel_menu == 2:
-            print('영화출력')
+            print('영화출력\n')
             get_movie(lst_movie)
         elif sel_menu == 3:
             print('영화검색')
@@ -49,9 +55,13 @@ def run():
 
 # 영화검색 함수
 def search_movie(items:list, title:str):
+    count = 0
     for item in items: # item이 Movie 클래스인지 알 수 없음
         if item.isNameContain(title): # 오타발생 위험!
+            count += 1
             print(item)
+            print('----------')
+    print(f'검색된 영화 수: {count}개')
 
 # 영화삭제 함수
 def del_movie(items:list, title:str):
@@ -90,10 +100,11 @@ def load_movie(items:list):
 # 영화 목록 확인 함수
 # items 변수는 list타입이라고 지정
 def get_movie(items:list): 
-    print(f'현재 입력된 영화 목록은 {len(items)}개 입니다.')
-    for idx, item in enumerate(items):
-        print(f'{idx+1}. {item}') # Movie 객체
+    for item in items:
+        print(f'{item}') # Movie 객체
+        print('----------') # 각 영화 아이템별 구분자2
 
+    print(f'현재 입력된 영화 데이터는 {len(items)}개 입니다.\n')
 # 영화데이터 입력 함수
 def set_movie():
     title, year, company, rate = input('영화입력[제목, 개봉연도, 제작사, 평점 순] > ').split('|') # 입력 중 발생하는 예외
@@ -106,6 +117,7 @@ def set_movie():
     # print(title, year, company, rate)
     # movie = Movie(title, year, company, rate)
     movie = Movie(title=title, year=year, company=company, rate=rate) # 데이터형 예외
+
     return movie
     
 

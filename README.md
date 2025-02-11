@@ -192,5 +192,19 @@ https://github.com/user-attachments/assets/0b91ae27-0ac8-4af3-900b-915cf6eefaec
 <!--![py001](./image/py001.png) -->
 <img src="./image/py001.png" width='400'>
 
-
+## 7일차
+- 파이썬 응용
+    - 토이프로젝트
+        - ChatGPT 유사앱 - 구글 제미나이 API
+    - 실습
+        - 제미나이 첫 앱 -> **클래스형태** 변경
+- 파이썬 응용
+    - 실행파일 만들기
+        - `pyinstaller` 모듈 설치
+            - pip install pyinstaller
+        - 실행파일 명령어 (터미널에서 실행)
+            - pyinstaller --onefile 파일명
+            - 같이 실행되는 터미널을 제거하려면
+            - pyinstaller --onefile --noconsole python_file.py
+            - 아이콘등의 리소스를 넣을 때는 dist폴더에 복사 필요
     

@@ -214,3 +214,10 @@ https://github.com/user-attachments/assets/ec5ec7e4-c6dc-48fb-9151-94b5bbeb90e7
             - pyinstaller --onefile --noconsole python_file.py
             - 아이콘등의 리소스를 넣을 때는 dist폴더에 복사 필요
     
+## 8일차
+- 파이썬 응용
+    - GUI 중 PyGame
+        - 기본 윈도우 학습
+        - 이벤트 처리
+        - 간단한 게임 
+        - 이미지, 사운드, 등 리소스 활용 게임

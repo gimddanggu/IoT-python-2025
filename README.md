@@ -221,3 +221,7 @@ https://github.com/user-attachments/assets/ec5ec7e4-c6dc-48fb-9151-94b5bbeb90e7
         - 이벤트 처리
         - 간단한 게임 
         - 이미지, 사운드, 등 리소스 활용 게임
+    
+    - 토이프로젝트
+        - 블록깨기 게임
+<img src='./image/py004.gif', width='700', height='400'>

@@ -224,4 +224,7 @@ https://github.com/user-attachments/assets/ec5ec7e4-c6dc-48fb-9151-94b5bbeb90e7
     
     - 토이프로젝트
         - 블록깨기 게임
-<img src='./image/py004.gif', width='700', height='400'>
+     
+
+<img src='./image/py004.gif' width='700' height='400'>
+
